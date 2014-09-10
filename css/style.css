@@ -20,7 +20,7 @@ header{
 }
 
 /* Layout */
-nav, header, .projects{
+nav, header, .projects, .project{
 	float: left;
 }
 nav{
@@ -31,4 +31,38 @@ nav{
 header, .projects{
 	width: 70%;
 }
+.projects{
+	height: 100%;
+}
+.project{
+	width: 50%;
+	height: 50%;
+}
 
+.social{
+	text-align: center;
+}
+.social a:nth-child(2){
+	margin: 0 25%;
+}
+/* Style */ 
+
+.project-1,
+.project-2,
+.project-3,
+.project-4{
+	background-repeat: none;
+	background-size: cover;
+}
+.project-1{
+	background-image: url(../img/project1.jpg);
+}
+.project-2{
+	background-image: url(../img/project2.jpg);
+}
+.project-3{
+	background-image: url(../img/project3.jpg);
+}
+.project-4{
+	background-image: url(../img/project4.jpg);
+}
