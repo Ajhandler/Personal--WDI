@@ -11,25 +11,36 @@ html, body{
 	-webkit-font-smoothing: antialiased;
 	height: 100%;
 	width: 100%;
+	min-height: 100%;
+	max-height: 100%;
 }
 body{
 	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #303030;
+	background-color: rgb(250,250,250);
+
+}
+a{
+	text-decoration: none;
 }
 header{
 	font-family: 'Playfair Display', serif;
+	font-weight: 400;
 }
 
 /* Layout */
-nav, header, .projects, .project{
+nav, header, .projects, .project, .project .btn, footer{
 	float: left;
 }
 nav{
-	width: 30%;
+	width: 20%;
 	height: 100%;
+	padding-bottom: 100%;
 }
 
 header, .projects{
-	width: 70%;
+	width: 80%;
 }
 .projects{
 	height: 100%;
@@ -43,10 +54,146 @@ header, .projects{
 	text-align: center;
 }
 .social a:nth-child(2){
-	margin: 0 25%;
+	margin: 0 20%;
 }
+.fixed{
+	position: fixed;
+	text-align: center;
+	width: 20%;
+	margin: 0 auto;
+	
+}
+.project:hover{
+	opacity: .8
+}
+
+.projects .btn{
+	text-align: center;
+	margin: 25% 35%;
+	opacity: 0;
+}
+.project-1:hover .btn,
+.project-2:hover .btn,
+.project-3:hover .btn,
+.project-4:hover .btn{
+	opacity: 1;
+}
+footer{
+	width: 80%;
+}
+
 /* Style */ 
 
+nav{
+	background: url(../img/menu-bg.png);
+	background-repeat: repeat;
+	
+	color: white;
+	text-align: center;
+}
+nav h3{
+	margin-bottom: 30%;
+	font-family: 'Playfair Display';
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+nav ul li{
+	margin-bottom: 30%;
+	padding: 10px;
+	transition: background-color 1s ease;
+}
+nav ul li:hover{
+	background-color: rgba(0,0,0,.8)
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	opacity: .5;
+	transition: all .5s ease;
+}
+nav ul li a:hover{
+	opacity: 1;
+}
+
+.btn{
+	border: 2px solid white;
+	padding: 10px 20px;
+	color: white;
+	text-decoration: none;
+	box-shadow: 0px 3px 0px 0px rgba(50, 50, 50, 0.75);
+	transition: all .8s ease;
+}
+.btn:hover{
+	background-color: white;
+	color: #303030;
+}
+
+.show-link:after{
+	content: attr(data-link);
+	color: rgba(255,255,255,0);
+	position: absolute;
+	top: 65%;
+	-webkit-transition: color 500ms;
+	-o-transition: color 500ms;
+	transition: color 1000ms;
+	text-decoration: none;
+
+}
+
+.show-link:hover:after{
+	color: rgba(48,48,48,.6);
+}
+.hello{
+	margin-left: 10%;
+	margin-top: 0;
+	font-size: 5em;
+	margin-bottom: 0;
+}
+header{
+	padding: 10%;
+}
+header h2{
+	font-size: 2em;
+	margin-left: 10%;
+	margin-top: 0;
+}
+header span{
+	font-family: 'Playfair Display';
+	font-style: italic;
+}
+i{
+	 color: #303030;
+	 transition: color .8s;
+}
+.fa-github-alt:hover{
+	color: #4183C4;
+}
+.fa-twitter:hover{
+	color: #55ACEE
+}
+.fa-linkedin:hover{
+	color: #0C75AF;
+}
+/*.show-link::after {
+content: ("content");
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+width: 100%;
+color: rgba(255,255,255,0);
+-webkit-transition: color 500ms;
+-o-transition: color 500ms;
+transition: color 500ms;
+}*/
+
+/*.show-link:hover::after{
+	color: rgba(48,48,48,.6);
+}*/
 .project-1,
 .project-2,
 .project-3,
@@ -66,3 +213,23 @@ header, .projects{
 .project-4{
 	background-image: url(../img/project4.jpg);
 }
+.totop{
+	font-family: 'Playfair Display';
+	font-size: 1.5em;
+	font-style: italic;
+	text-align: center;
+
+}
+footer{
+	text-align: center;
+	margin-top: 2%;
+}
+footer h2{
+	font-family: 'Playfair Display';
+	font-style: italic;
+}
+@media screen and(max-width: 800px){
+.project{
+	display:none;
+ 	}
+ }
