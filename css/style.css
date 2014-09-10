@@ -9,6 +9,8 @@ html {
 }
 html, body{
 	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	width: 100%;
 }
 body{
 	font-family: 'Lato', sans-serif;
@@ -16,3 +18,17 @@ body{
 header{
 	font-family: 'Playfair Display', serif;
 }
+
+/* Layout */
+nav, header, .projects{
+	float: left;
+}
+nav{
+	width: 30%;
+	height: 100%;
+}
+
+header, .projects{
+	width: 70%;
+}
+
