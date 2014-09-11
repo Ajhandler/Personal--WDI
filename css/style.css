@@ -178,22 +178,6 @@ i{
 .fa-linkedin:hover{
 	color: #0C75AF;
 }
-/*.show-link::after {
-content: ("content");
-position: absolute;
-top: 100%;
-left: 0;
-right: 0;
-width: 100%;
-color: rgba(255,255,255,0);
--webkit-transition: color 500ms;
--o-transition: color 500ms;
-transition: color 500ms;
-}*/
-
-/*.show-link:hover::after{
-	color: rgba(48,48,48,.6);
-}*/
 .project-1,
 .project-2,
 .project-3,
@@ -218,7 +202,6 @@ transition: color 500ms;
 	font-size: 1.5em;
 	font-style: italic;
 	text-align: center;
-
 }
 footer{
 	text-align: center;
@@ -233,3 +216,4 @@ footer h2{
 	display:none;
  	}
  }
+ 
