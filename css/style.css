@@ -30,7 +30,7 @@ header{
 }
 
 /* Layout */
-nav, header, .projects, .project, .project .btn, footer{
+nav, header, .projects, .project, .project .btn, footer, .me, .writing{
 	float: left;
 }
 nav{
@@ -42,16 +42,23 @@ nav{
 	border-radius: 100%;
 }
 
-header, .projects{
+header, .projects, .me{
 	width: 80%;
 }
-.projects{
+.projects, .me{
 	height: 100%;
 }
-.project{
+.project,{
 	width: 50%;
 	height: 50%;
 }
+
+.writing{
+	width: 30%;
+	margin-left: 10%;
+	text-align: center;
+}
+
 
 .social{
 	text-align: center;
