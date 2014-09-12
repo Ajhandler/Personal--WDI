@@ -30,7 +30,7 @@ header{
 }
 
 /* Layout */
-nav, header, .projects, .project, .project .btn, footer{
+nav, header, .projects, .project, .project .btn, footer, .me, .writing{
 	float: left;
 }
 nav{
@@ -38,17 +38,27 @@ nav{
 	height: 100%;
 	padding-bottom: 100%;
 }
+.imgcirc{
+	border-radius: 100%;
+}
 
-header, .projects{
+header, .projects, .me{
 	width: 80%;
 }
-.projects{
+.projects, .me{
 	height: 100%;
 }
-.project{
+.project,{
 	width: 50%;
 	height: 50%;
 }
+
+.writing{
+	width: 50%;
+	padding: 5%;
+	text-align: center;
+}
+
 
 .social{
 	text-align: center;
@@ -132,6 +142,18 @@ nav ul li a:hover{
 	color: #303030;
 }
 
+.emailbtn{
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	background-color: #647C6B;
+	font-size: 1.5em;
+	text-decoration: none;
+	box-shadow: 0px 3px 0px 0px rgba(50, 50, 50, 0.75);
+	padding: 10px 20px;
+    margin-left: 25%;
+}
+
 .show-link:after{
 	content: attr(data-link);
 	color: rgba(255,255,255,0);
@@ -178,22 +200,6 @@ i{
 .fa-linkedin:hover{
 	color: #0C75AF;
 }
-/*.show-link::after {
-content: ("content");
-position: absolute;
-top: 100%;
-left: 0;
-right: 0;
-width: 100%;
-color: rgba(255,255,255,0);
--webkit-transition: color 500ms;
--o-transition: color 500ms;
-transition: color 500ms;
-}*/
-
-/*.show-link:hover::after{
-	color: rgba(48,48,48,.6);
-}*/
 .project-1,
 .project-2,
 .project-3,
@@ -218,7 +224,6 @@ transition: color 500ms;
 	font-size: 1.5em;
 	font-style: italic;
 	text-align: center;
-
 }
 footer{
 	text-align: center;
@@ -228,8 +233,19 @@ footer h2{
 	font-family: 'Playfair Display';
 	font-style: italic;
 }
+.about{
+	text-align: center;
+}
 @media screen and(max-width: 800px){
 .project{
 	display:none;
  	}
  }
+
+ .points li{
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	text-align: center;
+ 	width: 25%;
+ }
+ 
