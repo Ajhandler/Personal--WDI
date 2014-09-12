@@ -38,6 +38,9 @@ nav{
 	height: 100%;
 	padding-bottom: 100%;
 }
+.imgcirc{
+	border-radius: 100%;
+}
 
 header, .projects{
 	width: 80%;
@@ -211,9 +214,19 @@ footer h2{
 	font-family: 'Playfair Display';
 	font-style: italic;
 }
+.about{
+	text-align: center;
+}
 @media screen and(max-width: 800px){
 .project{
 	display:none;
  	}
+ }
+
+ .points li{
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	text-align: center;
+ 	width: 25%;
  }
  
