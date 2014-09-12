@@ -48,7 +48,7 @@ header, .projects, .me{
 .projects, .me{
 	height: 100%;
 }
-.project{
+.project,{
 	width: 50%;
 	height: 50%;
 }
