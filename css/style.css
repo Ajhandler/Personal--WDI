@@ -13,6 +13,13 @@ html, body{
 	width: 100%;
 	min-height: 100%;
 	max-height: 100%;
+	overflow-y: hidden;
+}
+.scroll{
+	overflow-y: scroll;
+	height: 100%;
+	
+
 }
 body{
 	font-family: 'Lato', sans-serif;
@@ -43,12 +50,12 @@ nav{
 }
 
 header, .projects, .me{
-	width: 80%;
+	width: 100%;
 }
 .projects, .me{
 	height: 100%;
 }
-.project,{
+.project{
 	width: 50%;
 	height: 50%;
 }
@@ -89,7 +96,7 @@ header, .projects, .me{
 	opacity: 1;
 }
 footer{
-	width: 80%;
+	width: 100%;
 }
 
 /* Style */ 
@@ -97,7 +104,6 @@ footer{
 nav{
 	background: url(../img/menu-bg.png);
 	background-repeat: repeat;
-	
 	color: white;
 	text-align: center;
 }
@@ -157,8 +163,9 @@ nav ul li a:hover{
 .show-link:after{
 	content: attr(data-link);
 	color: rgba(255,255,255,0);
-	position: absolute;
-	top: 65%;
+	position: relative;
+	top: 20px;
+	left:-10px;
 	-webkit-transition: color 500ms;
 	-o-transition: color 500ms;
 	transition: color 1000ms;
